@@ -1,0 +1,26 @@
+Package: JuvenileSurvey
+Type: Package
+Title: Load, wrangle, and display data from the juvenile Pacific Herring survey
+Version: 0.1.0
+Authors@R: c(
+    person(given = c("Matthew", "H."), family = "Grinnell",
+    role = c("aut", "cre"), email = "matthew.grinnell@dfo-mpo.gc.ca"))
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: The JuvenileSurvey package provides methods to load, wrangle, and
+    display data from the juvenile Pacific Herring (*Clupea pallasii*) survey
+    in British Columbia, Canada.
+License:  MIT + file LICENSE
+URL: https://github.com/grinnellm/JuvenileSurvey
+BugReports: https://github.com/grinnellm/JuvenileSurvey/issues
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
+Depends: R (>= 4.2.1)
+Imports: Rdpack
+Suggests: knitr, rmarkdown
+Remotes: 
+RdMacros: Rdpack
+VignetteBuilder: knitr
+Vignette: Introduction
+Language: en-CA
