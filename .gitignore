@@ -10,3 +10,9 @@
 /inst/PACKAGES.bib
 *.bib.bak
 *.html
+
+# Data
+*.7z
+*.rsk
+*.xlsx
+*.RData
