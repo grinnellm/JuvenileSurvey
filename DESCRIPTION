@@ -9,17 +9,17 @@ Maintainer: The package maintainer <yourself@somewhere.net>
 Description: The JuvenileSurvey package provides methods to load, wrangle, and
     display data from the juvenile Pacific Herring (*Clupea pallasii*) survey
     in British Columbia, Canada.
-License:  MIT + file LICENSE
+License: MIT + file LICENSE
 URL: https://github.com/grinnellm/JuvenileSurvey
 BugReports: https://github.com/grinnellm/JuvenileSurvey/issues
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.1
-Depends: R (>= 4.2.1)
-Imports: Rdpack
-Suggests: knitr, rmarkdown
-Remotes: 
+Depends: R (>= 4.2.0)
+Imports: Rdpack, tibble, readr
+Suggests: knitr, rmarkdown, testthat, spelling
+Remotes: dankelley/oce
 RdMacros: Rdpack
 VignetteBuilder: knitr
 Vignette: Introduction
