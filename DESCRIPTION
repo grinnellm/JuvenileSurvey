@@ -15,8 +15,8 @@ BugReports: https://github.com/grinnellm/JuvenileSurvey/issues
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.1
-Depends: R (>= 4.2.0)
+RoxygenNote: 7.2.3
+Depends: R (>= 4.1.3)
 Imports: Rdpack, tibble, readr
 Suggests: knitr, rmarkdown, testthat, spelling
 Remotes: dankelley/oce
