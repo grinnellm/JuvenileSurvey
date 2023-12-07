@@ -1,1 +1,1 @@
-#' @param ts_info Tibble. Transect and station information (start times).
+#' @param ts_info Tibble. Date and transect information. Default NULL.

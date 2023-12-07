@@ -4,14 +4,16 @@
 \alias{load_rbr}
 \title{Load RBR data.}
 \usage{
-load_rbr(where, ts_info, quiet = TRUE)
+load_rbr(where, ts_info = NULL, quiet = TRUE, ...)
 }
 \arguments{
 \item{where}{Location of the input data file.}
 
-\item{ts_info}{Tibble. Transect and station information (start times).}
+\item{ts_info}{Tibble. Date and transect information. Default NULL.}
 
 \item{quiet}{Logical. Suppress messages; default is FALSE.}
+
+\item{...}{Other arguments passed to \code{\link[oce:read.rsk]{oce::read.rsk()}}.}
 }
 \value{
 tibble
@@ -24,9 +26,13 @@ Before loading the data, process the data by hand to identify transect
 and station.
 }
 \examples{
-load_rbr(where = "data-raw/RBR.rsk")
+data(ts_data)
+load_rbr(where = here::here("data-raw", "Test.rsk"), ts_info = NULL)
 }
 \references{
 \insertAllCited{}
+}
+\seealso{
+oce::read.rsk(), ts_data
 }
 \concept{load functions}

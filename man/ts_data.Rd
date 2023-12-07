@@ -5,13 +5,13 @@
 \alias{ts_data}
 \title{Transect and station data.}
 \format{
-Tibble with rows for regions and columns for attributes.
+Tibble with rows for dates and columns for attributes.
 }
 \usage{
 ts_data
 }
 \description{
-Table with start times for transects and stations.
+Table with dates for transects and stations.
 }
 \examples{
 data(ts_data)
@@ -19,9 +19,6 @@ ts_data
 }
 \references{
 \insertAllCited{}
-}
-\seealso{
-\code{\link{load_area_data}}
 }
 \concept{data}
 \keyword{datasets}

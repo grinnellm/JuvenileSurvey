@@ -29,3 +29,17 @@ lintr::lint(filename = here("tr", "SpawnIndex.Rnw"))
 
 # Good practice (takes a while; restart R and require `SpawnIndex` first)
 goodpractice::gp(path = ".")
+
+
+### TESTS ###
+require(tidyverse)
+require(here)
+require(quantmod)
+data(ts_data)
+dat <- load_rbr(where = here("data-raw", "Test.rsk"), ts_info = ts_data)
+p <- ggplot(data = dat, mapping = aes(x = DateTime, y = Pressure)) +
+  geom_line() +
+  scale_y_reverse() +
+  facet_grid(Date ~ ., scales = "free_x") +
+  juvenile_theme()
+p
