@@ -30,15 +30,14 @@ load_rbr <- function(where, ts_info = NULL, quiet = TRUE, ...) {
     Pressure = dat_raw@data$pressure,
     Temperature = dat_raw@data$temperature
   )
-
-  # if(is.null(ts_info)) {
-  #   dat <- dat %>%
-  #     select(DateTime, Date, Time, Pressure, Temperature)
-  # } else {
-  #   dat <- dat %>%
-  #     left_join(y = ts_info, by = "Date") %>%
-  #     select(DateTime, Date, Time, Transect, Pressure, Temperature)
-  # }
+  if(is.null(ts_info)) {
+    dat <- dat %>%
+      select(DateTime, Date, Time, Pressure, Temperature)
+  } else {
+    dat <- dat %>%
+      left_join(y = ts_info, by = "Date") %>%
+      select(DateTime, Date, Time, Transect, Station, Pressure, Temperature)
+  }
   dat <- dat %>%
     arrange(DateTime)
   dat

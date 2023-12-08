@@ -3,7 +3,7 @@
 \docType{data}
 \name{ts_data}
 \alias{ts_data}
-\title{Transect and station data.}
+\title{Table with dates for transects and stations.}
 \format{
 Tibble with rows for dates and columns for attributes.
 }
