@@ -38,6 +38,9 @@ load_rbr <- function(where, ts_info = NULL, quiet = TRUE, ...) {
       left_join(y = ts_info, by = "Date") %>%
       select(DateTime, Date, Time, Transect, Station, Pressure, Temperature)
   }
+  # TODO:
+  # 1. Identify peaks and name them
+  # 2. Identify runs of "zero" info and remove
   dat <- dat %>%
     arrange(DateTime)
   dat
