@@ -34,9 +34,11 @@ goodpractice::gp(path = ".")
 ### TESTS ###
 require(tidyverse)
 require(here)
-require(quantmod)
+require(pracma)
 data(ts_data)
-dat <- load_rbr(where = here("data-raw", "Test.rsk"), ts_info = ts_data)
+# dat <- load_rbr(where = here("data-raw", "Test.rsk"), ts_info = ts_data)
+dat <- load_rbr(where = here("data-raw", "Test.rsk"), from = 1, to = 396260,
+                ts_info = ts_data)
 p <- ggplot(data = dat, mapping = aes(x = DateTime, y = Pressure)) +
   geom_line() +
   scale_y_reverse() +
